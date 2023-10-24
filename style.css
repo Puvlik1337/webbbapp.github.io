@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
+.container {
+    max-width: 390px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Сетка из 2 равных столбцов и 3 равных строк, получается 6 прямоугольников */
+    grid-template-rows: 250px 250px 250px;
+    /* Было 200px 200px 200px */
+}
+
+.img {
+    width: 100px;
+    /* Было 150px */
+}
+
+.item {
+    text-align: center;
+    /* Благодаря text-align элементы внутри прямоугольника распологаютс по центру */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Внутренний отступ текста внутри кнопки 10 сверху снизу, 20 справа и слева */
+    border: none;
+    background: rgb(248, 168, 24);
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    /* Текст заглавными */
+    font-weight: 700;
+    /* Текст жирным */
+
+    transition: background .2s linear;
+    /* Изменение цвета кнопки при наведении мышкой 2 сек */
+}
+
+.btn:hover {
+    background: lightgreen;
+}
+
+.name {
+    display: inline-block;
+    padding: 5px 20px;
+    /* Внутренний отступ текста внутри кнопки 10 сверху снизу, 20 справа и слева */
+    border: none;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #000000;
+
+    /* text-transform: capitalize;
+     Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют. */
+
+    font-weight: 50;
+    /* Текст жирным */
+}
+
+.usercard {
+    text-align: center;
+}
